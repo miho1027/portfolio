@@ -1,6 +1,9 @@
 .about{
   background: rgba(208, 250, 255, 0.3);
   padding-bottom: 100px;
+  @include mq(sp){
+    padding-bottom: 60px;
+  }
   .section__ttl{
     font-size: 42px;
     color: $sub_color;

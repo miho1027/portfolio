@@ -819,6 +819,12 @@ template {
   padding-bottom: 100px;
 }
 
+@media screen and (max-width: 767px) {
+  .about {
+    padding-bottom: 60px;
+  }
+}
+
 .about .section__ttl {
   font-size: 42px;
   color: #ff835e;
