@@ -1,0 +1,225 @@
+.about{
+  background: rgba(208, 250, 255, 0.3);
+  padding-bottom: 100px;
+  .section__ttl{
+    font-size: 42px;
+    color: $sub_color;
+    text-align: center;
+    margin-bottom: 40px;
+    font-family: $font_ttl;
+    position: relative;
+  }
+  .section__ttl::before{
+    position: absolute;
+    content: "ABOUT";
+    font-family: 'Montserrat', sans-serif;
+    font-size: 50px;
+    color: #999;
+    opacity: 0.7;
+    top: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+    @include mq(sp){
+      font-size: 38px;
+      top: -20px;
+    }
+  }
+  &__content{
+    display: flex;
+    align-items: center;
+    width: 760px;
+    margin: 30px auto 60px;
+    @include mq(tab){
+      width: 600px;
+    }
+    @include mq(sp){
+      flex-direction: column;
+      width: 300px;
+    }
+  }
+  &__item{
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    position: relative;
+    box-shadow: 8px 8px 16px #fff;
+    @include mq(tab){
+      margin-top: 20px;
+      width: 200px;
+      height: 200px;
+      box-shadow: 4px 4px 8px #fff;
+    }
+    @include mq(sp){
+      align-items: center;
+      width: 180px;
+      height: 180px;
+    }
+    &::before{
+      position: absolute;
+      content: "";
+      top: -5px;
+      left: -11px;
+      width: 220px;
+      height: 220px;
+      border: 1px solid #855f54;
+      border-radius: 50%;
+      @include mq(tab){
+        width: 200px;
+        height: 200px;
+      }
+      @include mq(sp){
+        width: 180px;
+        height: 180px;
+      }
+    }
+  }
+  &__item-img{
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    @include mq(tab){
+      width: 200px;
+      height: 200px;
+    }
+    @include mq(sp){
+      align-items: center;
+      width: 180px;
+      height: 180px;
+    }
+  }
+  &__info{
+    margin-top: 30px;
+    margin-left: 60px;
+    color: #444;
+    width: 480px;
+    @include mq(tab){
+      margin-left: 40px;
+      width: 340px;
+    }
+    @include mq(sp){
+      margin-left: 0;
+      width: 270px;
+    }
+    &-ttl{
+      font-family: $font_en;
+      font-weight: bold;
+      font-size: 18px;
+      margin-bottom: 15px;
+      width: 110px;
+      border-bottom: 2px solid #555;
+      @include mq(tab){
+        font-size: 15px;
+        width: 100px;
+        padding-bottom: 5px;
+      }
+      @include mq(sp){
+        margin-left: 0;
+        padding-left: 5px;
+        font-size: 14px;
+        width: 90px;
+      }
+    }
+  }
+  &__list{
+    @include mq(sp){
+      margin-top: 20px;
+    }
+  }
+  &__list-item{
+    margin-bottom: 10px;
+    font-size: 15px;
+    color: #444;
+    @include mq(tab){
+      font-size: 13px;
+    }
+    @include mq(sp){
+      font-size: 11px;
+    }
+  }
+  &__list-item span{
+    display: inline-block;
+    color: #555;
+    font-size: 14px;
+    transform: rotate(90deg);
+    @include mq(tab){
+      font-size: 13px;
+    }
+    @include mq(sp){
+      font-size: 11px;
+    }
+  }
+  &__list-txt{
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #444;
+    margin-left: 15px;
+    @include mq(tab){
+      font-size: 13px;
+    }
+    @include mq(sp){
+      font-size: 11px;
+    }
+  }
+  &__copy{
+    background: #fff;
+    padding: 15px 30px;
+    margin: 0 auto 100px;
+    color: #444;
+    border: 4px double rgb(80, 202, 221);
+    border-radius: 5px;
+    max-width: 760px;
+    @include mq(tab){
+      width: 650px;
+      padding: 15px 20px;
+    }
+    @include mq(sp){
+      width: 270px;
+    }
+    &-ttl{
+      color: rgb(80, 202, 221);
+      font-family: $font_en;
+      font-weight: bold;
+      font-size: 16px;
+      margin-bottom: 8px;
+      @include mq(tab){
+        font-size: 15px;
+      }
+      @include mq(sp){
+        font-size: 14px;
+      }
+    }
+    &-txt{
+      font-size: 13px;
+      letter-spacing: 0.05em;
+      line-height: 20px;
+      @include mq(tab){
+        font-size: 12px;
+      }
+      @include mq(sp){
+        font-size: 11px;
+      }
+      & span{
+        color: #a7b7ff;
+        font-weight: bold;
+        white-space: break-all;
+        background: -webkit-linear-gradient(0deg, #a7b7ff, #50abbb);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    }
+  }
+  .fadeIn_item{
+    &.offs,
+    .offs &{
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    &.ons,
+    .ons &{
+      transition: all 1s cubic-bezier(0, 0, 0.13, 0.79);
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}

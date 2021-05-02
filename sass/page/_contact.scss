@@ -1,0 +1,160 @@
+.contact{
+  background: rgba(208, 250, 255, 0.3);
+  padding-bottom: 100px;
+  .section__ttl{
+    @include section_ttl
+  }
+  .section__ttl::before{
+    position: absolute;
+    content: "CONTACT";
+    font-family: 'Montserrat', sans-serif;
+    font-size: 50px;
+    color: #999;
+    opacity: 0.7;
+    top: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+    @include mq(sp){
+      font-size: 38px;
+      top: -20px;
+    }
+  }
+  &__form{
+    width: 50%;
+    margin: 0 auto;
+    @include mq(sp){
+      width: 70%;
+    }
+  }
+  &__list-item{
+    margin-bottom: 40px;
+    font-size: 20px;
+    color: #555;
+    font-weight: bold;
+    font-family: $font_en;
+    @include mq(sp){
+      font-size: 14px;
+    }
+    & span{
+      font-family: $font_ja;
+      font-weight: normal;
+      font-size: 18px;
+      @include mq(sp){
+        font-size: 12px;
+      }
+    }
+    & i{
+      margin-right: 10px;
+    }
+  }
+  .input__name{
+    width: 100%;
+    margin-top: 10px;
+    margin-left: 30px;
+    padding-left: 5px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #666;
+    font-family: $font_ja;
+    font-weight: lighter;
+    font-size: 12px;
+    letter-spacing: 0.05em;
+    @include mq(sp){
+      width: 80%;
+    }
+  }
+  .input__name:hover{
+    border-bottom: 2px solid $main_color;
+  }
+  .input__email{
+    width: 100%;
+    margin-top: 10px;
+    margin-left: 30px;
+    padding-left: 5px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #666;
+    font-family: $font_en;
+    font-weight: lighter;
+    font-size: 12px;
+    letter-spacing: 0.05em;
+  @include mq(sp){
+      width: 80%;
+    }
+  }
+  .input__email:hover{
+    border-bottom: 2px solid $main_color;
+  }
+  .input__phone{
+    width: 100%;
+    margin-top: 10px;
+    margin-left: 30px;
+    padding-left: 5px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #666;
+    font-family: $font_en;
+    font-weight: lighter;
+    font-size: 12px;
+    letter-spacing: 0.05em;
+    @include mq(sp){
+      width: 80%;
+    }
+  }
+  .input__phone:hover{
+    border-bottom: 2px solid $main_color;
+  }
+  .textarea__message{
+    width: 100%;
+    margin-top: 10px;
+    margin-left: 30px;
+    border: 2px solid #666;
+    font-family: $font_en;
+    font-weight: lighter;
+    padding: 10px;
+    font-size: 12px;
+    letter-spacing: 0.05em;
+    line-height: 20px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px gray;
+    @include mq(sp){
+      width: 80%;
+    }
+  }
+  .textarea__message:hover{
+    border: 2px solid $main_color;
+  }
+  .btn-submit{
+    width: 70px;
+    height: 30px;
+    background-color: rgba(208, 250, 255, 0.3);
+    display: block;
+    margin: 0 auto;
+    border: 2px solid #666;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    font-family: $font_en;
+    color: #666;
+    font-weight: bold;
+    box-shadow: 2px 2px 4px gray;
+    &:hover{
+      color: #fff;
+      background: $main_color;
+      border: 2px solid $main_color;
+
+    }
+  }
+  .fadeIn_item{
+    &.offs,
+    .offs &{
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    &.ons,
+    .ons &{
+      transition: all 1s cubic-bezier(0, 0, 0.13, 0.79);
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+}

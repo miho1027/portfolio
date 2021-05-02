@@ -1,0 +1,223 @@
+.service{
+  background: rgba(208, 250, 255, .3);
+  padding: 150px 0 90px;
+  .section__ttl{
+    @include section_ttl
+    }
+  .section__ttl::before{
+    position: absolute;
+    content: "SERVICE";
+    font-family: 'Montserrat', sans-serif;
+    font-size: 50px;
+    color: #999;
+    opacity: 0.7;
+    top: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+    @include mq(sp){
+      font-size: 38px;
+      top: -20px;
+    }
+  }
+  &__ttl{
+    font-family: $font_en;
+    font-weight: bold;
+    color: $main_color;
+    font-size: 45px;
+    margin-bottom: 20px;
+    position: relative;
+    @include mq(sp){
+      font-size: 36px;
+    }
+    &::before{
+      content: "_";
+      position: absolute;
+      font-size: 50px;
+      color: $main_color;
+      top: 5px;
+      left: 15px;
+      @include mq(sp){
+        font-size: 40px;
+        left: 13px;
+      }
+    }
+  }
+  &__content{
+    max-width: 700px;
+    display: flex;
+    margin-bottom: 100px;
+    @include mq(tab){
+      width: 90%;
+      margin-bottom: 80px;
+    }
+    @include mq(sp){
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 50px;
+    }
+
+  }
+  &__item{
+    border: 4px double rgb(148, 209, 218);
+    border-radius: 5px;
+    width: 250px;
+    height: 200px;
+    background: rgba(255, 255, 255, 0.5);
+    @include mq(tab){
+      margin-left: 8%;
+      margin-top: 5%;
+    }
+    @include mq(sp){
+      width: 200px;
+      height: 150px;
+      margin-bottom: 0;
+    }
+    &-ttl{
+      font-family: $font_ja;
+      color: #666;
+      font-size: 22px;
+      font-weight: bold;
+      text-align: center;
+      margin-top: 20px;
+      @include mq(sp){
+        font-size: 20px;
+        margin-top: 10px;
+      }
+    }
+    &-img{
+      width: 38%;
+      height: 41%;
+      margin-left: 32%;
+      margin-top: 8%;
+    }
+    #s-img02{
+      width: 40%;
+      height: 45%;
+      margin-left: 30%;
+      margin-top: 5%;
+    }
+    #s-img03{
+      width: 38%;
+      height: 45%;
+      margin-left: 32%;
+      margin-top: 8%;
+    }
+  }
+  &__info{
+    border: 4px double rgb(148, 209, 218);
+    border-radius: 5px;
+    padding: 20px;
+    height: 200px;
+    background: rgba(255, 255, 255, 0.5);
+    box-sizing: border-box;
+    width: 440px;
+    opacity: 1;
+    transition: .4s;
+    @include mq(tab){
+      margin-top: 5%;
+    }
+    @include mq(sp){
+      width: 200px;
+      height: 250px;
+      margin-left: 8%;
+      margin-top: 0;
+      box-shadow: 2px 2px 4px lightgray;
+    }
+    &-txt{
+      font-family: $font_ja;
+      line-height: 20px;
+      letter-spacing: 0.05em;
+      font-size: 1.0em;
+      @include mq(sp){
+        font-size: 12px;
+      }
+    }
+    &-ttl{
+      margin-top: 15px;
+      width: 60px;
+      font-size: 0.9em;
+      font-family: $font_ja;
+    }
+    &-tool{
+      margin-top: 5px;
+      font-size: .8em;
+      margin-left: 10px;
+      font-family: $font_en;
+      font-weight: bold;
+    }
+  }
+  #t01{
+    position: absolute;
+    content: "";
+    top: 18%;
+    left: 12%;
+    transform: translate(-18%,-12%);
+    @include mq(tab){
+      top: 19%;
+      left: 8%;
+      transform: translate(-19%,-8%);
+    }
+    @include mq(sp){
+      display: none;
+    }
+  }
+  #t02{
+    position: absolute;
+    content: "";
+    top: 42%;
+    left: 19%;
+    transform: translate(-42%,-19%);
+    @include mq(tab){
+      top: 43%;
+      left: 10%;
+      transform: translate(-43%,-10%);
+    }
+    @include mq(sp){
+      display: none;
+    }
+  }
+  #t03{
+    position: absolute;
+    content: "";
+    top: 66%;
+    left: 27%;
+    transform: translate(-66%,-27%);
+    @include mq(tab){
+      top: 67%;
+      left: 11%;
+      transform: translate(-67%,-11%);
+    }
+    @include mq(sp){
+      display: none;
+    }
+  }
+  #c01{
+    margin-left: 0;
+  }
+  #c02{
+    margin-left: 80px;
+    @include mq(tab){
+      margin-left: 0;
+    }
+  }
+  #c03{
+    margin-left: 160px;
+    @include mq(tab){
+      margin-left: 0;
+    }
+  }
+  .fadeIn_item{
+    &.offs,
+    .offs &{
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    &.ons,
+    .ons &{
+      transition: all 1s cubic-bezier(0, 0, 0.13, 0.79);
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
