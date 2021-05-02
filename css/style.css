@@ -821,7 +821,7 @@ template {
 
 @media screen and (max-width: 767px) {
   .about {
-    padding-bottom: 40px;
+    padding-bottom: 50px;
   }
 }
 
@@ -1089,6 +1089,7 @@ template {
 @media screen and (max-width: 767px) {
   .about__copy {
     width: 270px;
+    margin-bottom: 50px;
   }
 }
 
