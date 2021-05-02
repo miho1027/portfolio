@@ -542,19 +542,19 @@ template {
   }
 }
 
-.header .header__logo {
+.header__logo {
   position: relative;
   width: 100px;
   margin: 10px 55px;
 }
 
 @media screen and (max-width: 1179px) {
-  .header .header__logo {
+  .header__logo {
     margin-left: 30px;
   }
 }
 
-.header .header__logo::before {
+.header__logo::before {
   position: absolute;
   content: "Miho Uchida";
   font-family: "Cinzel", serif;
@@ -566,7 +566,7 @@ template {
 }
 
 @media screen and (max-width: 767px) {
-  .header .header__logo::before {
+  .header__logo::before {
     font-size: 9px;
     left: -12%;
   }
@@ -585,12 +585,12 @@ template {
   color: #555;
 }
 
-.header .header__nav {
+.header__nav {
   float: right;
   margin-right: 50px;
 }
 
-.header .header__list {
+.header__list {
   margin-top: 20px;
   line-height: 50px;
   display: -webkit-box;
@@ -598,28 +598,28 @@ template {
   display: flex;
 }
 
-.header .header__list .header__list-item {
+.header__list-item {
   font-size: 1.2em;
 }
 
-.header .header__list .fab {
+.header__list .fab {
   color: #555;
   font-size: 1.2em;
   vertical-align: middle;
   padding: 0 5px;
 }
 
-.header .header__list .nav__link {
+.header__list .nav__link {
   margin-left: 25px;
 }
 
 @media screen and (max-width: 1179px) {
-  .header .header__list .nav__link {
+  .header__list .nav__link {
     margin-left: 0;
   }
 }
 
-.header .header__list .nav__link:hover {
+.header__list .nav__link:hover {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-top: 2px solid #00bcd4;
@@ -994,8 +994,8 @@ template {
 @media screen and (max-width: 767px) {
   .about__info-ttl {
     margin-left: 0;
-    padding-left: 5px;
-    font-size: 14px;
+    padding-left: 8px;
+    font-size: 13px;
     width: 90px;
   }
 }
@@ -1629,7 +1629,7 @@ template {
 
 @media screen and (max-width: 767px) {
   .mv-content .loading span {
-    font-size: 16px;
+    font-size: 14px;
   }
 }
 
@@ -1901,7 +1901,7 @@ template {
   color: #ff835e;
   text-align: center;
   font-family: "Montserrat", sans-serif;
-  margin-bottom: 80px;
+  margin-bottom: 100px;
   position: relative;
 }
 
@@ -2111,6 +2111,13 @@ template {
   font-weight: bold;
 }
 
+@media screen and (max-width: 767px) {
+  .service__info-tool {
+    font-size: .7em;
+    font-weight: normal;
+  }
+}
+
 .service #t01 {
   position: absolute;
   content: "";
@@ -2234,7 +2241,7 @@ template {
   color: #ff835e;
   text-align: center;
   font-family: "Montserrat", sans-serif;
-  margin-bottom: 80px;
+  margin-bottom: 100px;
   position: relative;
 }
 
@@ -2642,7 +2649,7 @@ template {
   color: #ff835e;
   text-align: center;
   font-family: "Montserrat", sans-serif;
-  margin-bottom: 80px;
+  margin-bottom: 100px;
   position: relative;
 }
 
@@ -3043,7 +3050,7 @@ template {
   color: #ff835e;
   text-align: center;
   font-family: "Montserrat", sans-serif;
-  margin-bottom: 80px;
+  margin-bottom: 100px;
   position: relative;
 }
 

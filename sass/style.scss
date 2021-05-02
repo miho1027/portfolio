@@ -11,9 +11,6 @@
 // ==========================================================================
 // mixin
 // ==========================================================================
-
-@import "mixin/animation";
-@import "mixin/btn";
 @import "mixin/etc";
 
 // ==========================================================================
@@ -22,17 +19,13 @@
 @import "module/header";
 @import "module/footer";
 @import "module/content";
-@import "module/share";
-@import "module/side";
 @import "module/main";
-@import "module/burger";
 
 // ==========================================================================
 // page
 // ==========================================================================
 @import "page/about";
 @import "page/mv";
-@import "page/news";
 @import "page/service";
 @import "page/works";
 @import "page/skill";

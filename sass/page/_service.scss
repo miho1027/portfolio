@@ -1,6 +1,7 @@
 .service{
   background: rgba(208, 250, 255, .3);
   padding: 150px 0 90px;
+  position: relative;
   .section__ttl{
     @include section_ttl
     }
@@ -145,6 +146,10 @@
       margin-left: 10px;
       font-family: $font_en;
       font-weight: bold;
+      @include mq(sp){
+        font-size: .7em;
+        font-weight: normal;
+      }
     }
   }
   #t01{
