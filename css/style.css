@@ -834,6 +834,13 @@ template {
   position: relative;
 }
 
+@media screen and (max-width: 767px) {
+  .about .section__ttl {
+    font-size: 30px;
+    margin-bottom: 50px;
+  }
+}
+
 .about .section__ttl::before {
   position: absolute;
   content: "ABOUT";
@@ -1471,6 +1478,13 @@ template {
   width: 130px;
   height: 130px;
   border-radius: 50%;
+}
+
+@media screen and (max-width: 767px) {
+  .mv-content .circle {
+    width: 100px;
+    height: 100px;
+  }
 }
 
 .mv-content .c01 {

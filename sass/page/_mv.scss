@@ -140,6 +140,10 @@
     width: 130px;
     height: 130px;
     border-radius: 50%;
+    @include mq(sp){
+      width: 100px;
+      height: 100px;
+    }
   }
   .c01{
     position: absolute;

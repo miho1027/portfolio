@@ -11,6 +11,10 @@
     margin-bottom: 40px;
     font-family: $font_ttl;
     position: relative;
+    @include mq(sp){
+      font-size: 30px;
+      margin-bottom: 50px;
+    }
   }
   .section__ttl::before{
     position: absolute;
