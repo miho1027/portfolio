@@ -126,6 +126,9 @@
     transition: 0.3s;
     z-index: 999;
   }
+  .hamburger:hover .h-span:nth-child(2) {
+    left: 15px;
+  }
   .hamburger .h-span:nth-child(1) {
     top: 10px;
   }
@@ -140,6 +143,7 @@
     transform: rotate(45deg);
   }
   .hamburger.active .h-span:nth-child(2) {
+    right: 60px;
     opacity: 0;
   }
   .hamburger.active .h-span:nth-child(3) {

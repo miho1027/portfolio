@@ -1,7 +1,7 @@
-"use strict"
-$(function(){
-
   //back to top
+  jQuery(document).ready(function(){
+    //jQueryで実行する内容
+
   $(window).scroll(function () {
     let nowHeight = $(window).scrollTop();
     let windowHeight = $(window).height();

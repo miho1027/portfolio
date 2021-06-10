@@ -1,56 +1,4 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-  <meta charset="UTF-8">
-  <meta name="description" content="フリーランスとして活動している打田美穂のポートフォリオサイトです。Webサイト制作やデザインを行っております。">
-  <title>Miho Uchida</title>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Font Awesome -->
-  <link
-  href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
-  rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Sawarabi+Gothic&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@900&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
-
-  <!-- css -->
-  <link rel="stylesheet" href="css/style.css"/>
-  <title>Miho Uchida</title>
-</head>
-<body>
-  <!-- back-to-top -->
-  <div id="back-to-top"></div>
-  <!-- /back-to-top -->
-
-  <header class="header">
-    <div class="header__logo">
-      <img src="img/logo.png" class="site-logo" alt="ロゴです">
-    </div>
-    <div class="header__nav">
-      <nav>
-        <ul class="header__list">
-          <li class="header__list-item"><a href="#service" class="nav__link">service</a></li>
-          <li class="header__list-item"><a href="#skill" class="nav__link">skill</a></li>
-          <li class="header__list-item"><a href="#works" class="nav__link">works</a></li>
-          <li class="header__list-item"><a href="#about" class="nav__link">about</a></li>
-          <li class="header__list-item"><a href="#contact" class="nav__link">contact</a></li>
-          <li class="header__list-item"><a href="https://www.instagram.com/miho_un1210" class="nav__link"><i class="fab fa-instagram"></i></a></li>
-          <li class="header__list-item"><a href="https://twitter.com/mihou_prog0" class="nav__link"><i class="fab fa-twitter"></i></a></li>
-        </ul>
-      </nav>
-    </div>
-
-    <div class="hamburger">
-      <span class="h-span"></span>
-      <span class="h-span"></span>
-      <span class="h-span"></span>
-    </div>
-  </header>
+<?php get_header(); ?>
 
   <section class="mv section">
     <div class="mv-wave">
@@ -129,7 +77,7 @@
       <div class="service__content fadeIn_item offs" id="c01">
         <div class="service__item">
           <p class="service__item-ttl">デザイン</p>
-          <img src="img/design.png" alt="デザインの画像です" class="service__item-img">
+          <img src="<?php echo get_template_directory_uri(); ?>/img/design.png" class="service__item-img" alt="デザインの画像です">
         </div>
         <div class="service__info" id="i01">
           <p class="service__info-txt">お客様のご要望に沿ったデザインを制作いたします。<br>ユーザーにとって見やすく、使いやすく、そして愛されるデザインを目指します。</p>
@@ -143,7 +91,7 @@
       <div class="service__content fadeIn_item offs" id="c02">
         <div class="service__item">
           <p class="service__item-ttl">コーディング</p>
-          <img src="img/programming.png" alt="プログラミングの画像です" class="service__item-img" id="s-img02">
+          <img src="<?php echo get_template_directory_uri(); ?>/img/programming.png" class="service__item-img" id="s-img02" alt="プログラミングの画像です">
         </div>
         <div class="service__info" id="i02">
           <p class="service__info-txt">デザインを活かす動きや効果を実装し、Only Oneのサイトを制作します。<br>デザインの意図に沿った動きや効果を付け、ユーザーに深くまで理解していただけるサイトを目指します。</p>
@@ -157,7 +105,7 @@
       <div class="service__content fadeIn_item offs" id="c03">
         <div class="service__item">
           <p class="service__item-ttl">その他</p>
-          <img src="img/setting.png" alt="設定の画像です" class="service__item-img" id="s-img03">
+          <img src="<?php echo get_template_directory_uri(); ?>/img/setting.png" class="service__item-img" id="s-img03" alt="設定の画像です">
         </div>
         <div class="service__info" id="i03">
           <p class="service__info-txt">プログラムのバージョン違いやサーバ設定、ブラウザの種類などが原因で不具合が生じることがあります。<br> <br>Webページの修正や新機能実装、スマートフォン対応など、ご要望に応じて対応いたします。</p>
@@ -177,7 +125,7 @@
             <h3 class="skill__ttl">HTML</h3>
             <i class="fab fa-html5"></i>
           </div>
-          <img src="img/wave.png" class="wave" alt="波線です">
+          <img src="<?php echo get_template_directory_uri(); ?>/img/wave.png" class="wave" alt="波線です">
         </div>
 
         <div class="balloon">
@@ -185,22 +133,22 @@
             <h3 class="skill__ttl">CSS</h3>
             <i class="fab fa-css3-alt"></i>
           </div>
-          <img src="img/wave.png" class="wave" alt="波線です">
+          <img src="<?php echo get_template_directory_uri(); ?>/img/wave.png" class="wave" alt="波線です">
         </div>
 
         <div class="balloon">
           <div class="skill__item s-c03">
             <h3 class="skill__ttl m_ttl">JavaScript</h3>
-            <img src="https://img.icons8.com/color/144/000000/javascript.png" class="skill-img java" alt="JavaScript"/>
+            <img src="<?php echo get_template_directory_uri(); ?>/img/javascript.png" class="skill-img java" alt="JavaScript"/>
           </div>
-          <img src="img/wave.png" class="wave" alt="波線です">
+          <img src="<?php echo get_template_directory_uri(); ?>/img/wave.png" class="wave" alt="波線です">
         </div>
 
           <div class="balloon">
             <div class="skill__item s-c04">
-              <img src="img/jQuery .png" class="skill-img jq" alt="jQuery">
+              <img src="<?php echo get_template_directory_uri(); ?>/img/jQuery .png" class="skill-img jq" alt="jQuery">
             </div>
-            <img src="img/wave.png" class="wave" alt="波線です">
+            <img src="<?php echo get_template_directory_uri(); ?>/img/wave.png" class="wave" alt="波線です">
           </div>
 
           <div class="balloon">
@@ -208,7 +156,7 @@
               <i class="fab fa-wordpress"></i>
               <h3 class="skill__ttl w_ttl">WordPress</h3>
             </div>
-            <img src="img/wave.png" class="wave" alt="波線です">
+            <img src="<?php echo get_template_directory_uri(); ?>/img/wave.png" class="wave" alt="波線です">
           </div>
 
           <div class="balloon">
@@ -216,15 +164,15 @@
               <i class="fab fa-sass"></i>
               <h3 class="skill__ttl w_ttl">Sass</h3>
             </div>
-            <img src="img/wave.png" class="wave" alt="波線です">
+            <img src="<?php echo get_template_directory_uri(); ?>/img/wave.png" class="wave" alt="波線です">
           </div>
 
           <div class="balloon">
             <div class="skill__item s-c07">
-              <img src="https://img.icons8.com/wired/64/000000/media-queries.png" class="media-queries media" />
+              <img src="<?php echo get_template_directory_uri();?>/img/media-queries.png" class="media-queries media" alt="レスポンシブの画像です"/>
               <h3 class="skill__ttl m_ttl">Media<br>Queries</h3>
             </div>
-            <img src="img/wave.png" class="wave" alt="波線です">
+            <img src="<?php echo get_template_directory_uri(); ?>/img/wave.png" class="wave" alt="波線です">
           </div>
       </div>
     </div>
@@ -236,7 +184,7 @@
 
       <div class="works__content fadeIn_item offs">
         <div class="works__item">
-          <img src="img/mosya.png" alt="模写の写真です" class="works__img">
+          <img src="<?php echo get_template_directory_uri(); ?>/img/mosya.png" class="works__img" alt="模写の写真です">
         </div>
         <div class="works__info">
           <p class="works__info-ttl">模写サイト</p>
@@ -255,14 +203,14 @@
           <p class="works__info-tool">ツール：HTML / CSS / JavaScript / jQuery</p>
         </div>
         <div class="works__item02">
-          <img src="img/tab.png" alt="タブの写真です" class="works__img">
+          <img src="<?php echo get_template_directory_uri(); ?>/img/tab.png" class="works__img" alt="タブの写真です">
         </div>
       </div>
       <a href="https://miho1027.github.io/tab/" class="works__btn fadeIn_item offs"><i class="fa fa-chevron-right"></i>Read More</a>
 
       <div class="works__content fadeIn_item offs">
         <div class="works__item" id="item1">
-          <img src="img/portfolio.png" alt="ポートフォリオの写真です" class="works__img" id="work01">
+          <img src="<?php echo get_template_directory_uri(); ?>/img/portfolio.png" class="works__img" id="work01"alt="ポートフォリオの写真です">
         </div>
         <div class="works__info">
           <p class="works__info-ttl">ポートフォリオ</p>
@@ -272,21 +220,21 @@
         </div>
       </div>
       <a href="https://miho1027.github.io/portfolio/" class="works__btn fadeIn_item offs" id="wb"><i class="fa fa-chevron-right"></i>Read More</a>
-    </div>
-
-    <div class="works__content fadeIn_item offs" id="works-c02">
-      <div class="works__info02">
-        <p class="works__info-ttl">株式会社ココステートのwebサイト</p>
-        <p class="works__info-copy">株式会社ココステートのサイトをリニューアルしました。デザインからコーディングまで共同開発しました。</p>
-        <p class="works__info-txt">制作期間：約1ヶ月</p>
-        <p class="works__info-tool">ツール：HTML / CSS / JavaScript / jQuery / Git / Adobe XD</p>
+      
+      <div class="works__content fadeIn_item offs" id="works-c02">
+        <div class="works__info02">
+          <p class="works__info-ttl">株式会社ココステートのwebサイト</p>
+          <p class="works__info-copy">株式会社ココステートのサイトをリニューアルしました。デザインからコーディングまで共同開発しました。</p>
+          <p class="works__info-txt">制作期間：約1ヶ月</p>
+          <p class="works__info-tool">ツール：HTML / CSS / JavaScript / jQuery / Git / Adobe XD</p>
+        </div>
+        <div class="works__item02">
+          <img src="<?php echo get_template_directory_uri(); ?>/img/cocostate.png" class="works__img" alt="株式会社ココステートのwebサイトです。">
+        </div>
       </div>
-      <div class="works__item02">
-        <img src="<?php echo get_template_directory_uri(); ?>" class="works__img" alt="株式会社ココステートのwebサイトです。">
-      </div>
+      <a href="https://cocostate.jp/index.html" class="works__btn fadeIn_item offs"><i class="fa fa-chevron-right"></i>Read More</a>
+      
     </div>
-    <a href="https://cocostate.jp/index.html" class="works__btn fadeIn_item offs"><i class="fa fa-chevron-right"></i>Read More</a>
-    
   </section>
 
   <section class="about" id="about">
@@ -294,7 +242,7 @@
     <div class="inner">
       <div class="about__content fadeIn_item offs">
         <div class="about__item">
-          <img src="img/selfie.jpg" alt="プロフィール写真" class="about__item-img">
+          <img src="<?php echo get_template_directory_uri(); ?>/img/selfie.jpg" class="about__item-img" alt="プロフィール写真">
         </div>
         <div class="about__info">
           <p class="about__info-ttl">Miho Uchida</p>
@@ -320,7 +268,8 @@
   <section class="contact" id="contact">
     <h2 class="section__ttl fadeIn_item offs">CONTACT</h2>
     <div class="inner">
-      <form action="" class="contact__form fadeIn_item offs">
+    <?php echo do_shortcode( '[contact-form-7 id="7" title="CONTACT"]' ); ?>
+      <!-- <form action="" class="contact__form fadeIn_item offs">
         <ul class="contact__list">
           <li class="contact__list-item">
             <i class="fa fa-user form-icon"></i>Name<span>（お名前）</span>:<br>
@@ -342,17 +291,8 @@
         <div class="contact__btn">
           <input type ="submit" class="btn-submit" value="Send" />
         </div>
-      </form>
+      </form> -->
     </div>
   </section>
 
-  <footer class="footer">
-    <p class="footer__txt">&copy; Miho Uchida</p>
-  </footer>
-
-    <!--jQUERY-->
-    <script src="js/jquery-3.5.1.min.js"></script>
-    <!--javascript-->
-    <script src="js/script.js"></script>
-</body>
-</html>
+<?php get_footer(); ?>
