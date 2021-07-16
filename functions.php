@@ -22,6 +22,7 @@ function load_script() {
       false,
       true
     );
+    
     /* main.js */
     wp_enqueue_script(
       'main-script',
