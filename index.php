@@ -223,7 +223,7 @@
       
       <div class="works__content fadeIn_item offs" id="works-c02">
         <div class="works__info02">
-          <p class="works__info-ttl">株式会社ココステートのwebサイト</p>
+          <p class="works__info-ttl">株式会社ココステート</p>
           <p class="works__info-copy">株式会社ココステートのサイトをリニューアルしました。デザインからコーディングまで共同開発しました。</p>
           <p class="works__info-txt">制作期間：約1ヶ月</p>
           <p class="works__info-tool">ツール：HTML / CSS / JavaScript / jQuery / Git / Adobe XD</p>
